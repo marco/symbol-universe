@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def symbol(request, id_string):
+    id_int = int(id_string)
+    symbol = chr(id_int)
+    return HttpResponse(symbol)
