@@ -1,0 +1,37 @@
+/* Fonts */
+@font-face {
+    font-family: symbola;
+    src: url('../resources/symbola.ttf');
+}
+
+@font-face {
+    font-family: unifont;
+    src: url('../resources/unifont.ttf');
+}
+
+@font-face {
+    font-family: unifont_upper;
+    src: url('../resources/unifont_upper.ttf');
+}
+
+/* Tags */
+body {
+    background-color: #f0f0f0;
+}
+
+kbd {
+    background-color: white;
+    border-radius: 0.2em;
+    box-shadow: 3px 3px 1px 0px gray;
+}
+
+/* IDs */
+#symbol_display {
+    display: inline-block;  /* Auto-size width to account for characters not
+                               being monospace */
+    font-family: unifont, unifont_upper;
+    padding: 15px;
+    text-align: center;
+    font-size: 140px;
+    border-radius: 10px;
+}

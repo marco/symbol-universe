@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset='utf-8' />
+        <title>{{display_symbol}} at Symbol Universe</title>
+        <link rel='stylesheet' type='text/css'
+              href='{% static 'symbols/css/style.css' %}'>
+    </head>
+    <body>
+        <kbd id='symbol_display'>{{display_symbol}}</kbd>
+    </body>
+</html>

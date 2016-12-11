@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'symbols.apps.SymbolsConfig',  # Used by `STATICFILES_FINDERS` to find
+                                   # static files inside of the app
 ]
 
 MIDDLEWARE = [
@@ -54,7 +56,9 @@ ROOT_URLCONF = 'symboluniverse.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            'symbols/templates/',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
